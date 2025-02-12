@@ -1,4 +1,4 @@
-# temperature_client.py
+# client.py
 from aiocoap import Context, Message, GET
 import asyncio
 

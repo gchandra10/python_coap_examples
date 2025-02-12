@@ -1,4 +1,4 @@
-# temperature_server.py
+# server.py
 from aiocoap import Message,Context
 from aiocoap.resource import Resource, Site
 import asyncio
@@ -24,6 +24,7 @@ async def main():
     print(f"Server started on coap://{bind[0]}:{bind[1]}")
     
     # Keep server running
+    # Create_future its indefinte waiting for the future to be resolved
     await asyncio.get_running_loop().create_future()
 
 if __name__ == "__main__":
